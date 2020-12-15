@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.1 on win32)" generated="20201215 23:25:29.742" rpa="false">
+<suite id="s1" name="RobotProject1" source="C:\Users\pbandara\eclipse-workspace\RobotProject1">
+<suite id="s1-s1" name="Test" source="C:\Users\pbandara\eclipse-workspace\RobotProject1\Test">
+<suite id="s1-s1-s1" name="firstTest" source="C:\Users\pbandara\eclipse-workspace\RobotProject1\Test\firstTest.robot">
+<test id="s1-s1-s1-t1" name="Open Browser">
+<kw name="open the browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${HOMEPAGE}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20201215 23:25:29.936" level="INFO">Opening browser 'Chrome' to base url 'http://www.google.com'.</msg>
+<status status="PASS" starttime="20201215 23:25:29.936" endtime="20201215 23:25:34.755"></status>
+</kw>
+<status status="PASS" starttime="20201215 23:25:29.935" endtime="20201215 23:25:34.756"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20201215 23:25:34.757" endtime="20201215 23:25:34.763"></status>
+</kw>
+<status status="PASS" starttime="20201215 23:25:29.935" endtime="20201215 23:25:34.764" critical="yes"></status>
+</test>
+<test id="s1-s1-s1-t2" name="Search on Google">
+<kw name="search topic">
+<arguments>
+<arg>browserstack</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>${topic}</arg>
+</arguments>
+<msg timestamp="20201215 23:25:34.772" level="INFO">Typing text 'browserstack' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20201215 23:25:34.771" endtime="20201215 23:25:34.943"></status>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>ENTER</arg>
+</arguments>
+<msg timestamp="20201215 23:25:34.944" level="INFO">Sending key(s) ('ENTER',) to name=q element.</msg>
+<msg timestamp="20201215 23:25:35.228" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20201215 23:25:35.228" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20201215 23:25:34.943" endtime="20201215 23:25:37.971"></status>
+</kw>
+<status status="PASS" starttime="20201215 23:25:34.769" endtime="20201215 23:25:37.973"></status>
+</kw>
+<status status="PASS" starttime="20201215 23:25:34.767" endtime="20201215 23:25:37.974" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201215 23:25:29.809" endtime="20201215 23:25:37.978"></status>
+</suite>
+<status status="PASS" starttime="20201215 23:25:29.806" endtime="20201215 23:25:37.990"></status>
+</suite>
+<status status="PASS" starttime="20201215 23:25:29.783" endtime="20201215 23:25:38.001"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" id="s1" name="RobotProject1">RobotProject1</stat>
+<stat pass="2" fail="0" id="s1-s1" name="Test">RobotProject1.Test</stat>
+<stat pass="2" fail="0" id="s1-s1-s1" name="firstTest">RobotProject1.Test.firstTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
